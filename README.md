@@ -43,7 +43,7 @@ Once you have identified colliding triangle pairs, you can use this code to proc
 This code computes the constraint value C and its gradient, which can be used within a PBD solver.
 The triangle mesh data is represented as matrices. Here's an example input:
 
-```sh
+```cpp
 Matrix triangle1, triangle2;
 triangle1 << 0.0, 0.36, 0.1,
     0.2, 0.32, 0.1,
