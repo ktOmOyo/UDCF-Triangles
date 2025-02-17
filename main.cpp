@@ -68,7 +68,6 @@ bool Moller_intersection_test(const Vector &N1, const Vector &N2, const Matrix &
         return false;
     if (!(t2 > t3 && t4 > t1))
         return false;
-    std::cout << t1 << " " << t2 << " " << t3 << " " << t4 << std::endl;
     return true;
 }
 
@@ -137,9 +136,6 @@ int main()
     triangle2 << 0.0, 0.32000001, 0.2,
         0.0, 0.32000001, -0.18,
         0.0, 0.28, 0.0;
-
-    triangle1 *= 1.0E-105;
-    triangle2 *= 1.0E-105;
 
     Vector N1 = (triangle1.row(1) - triangle1.row(0)).cross(triangle1.row(2) - triangle1.row(0)).normalized();
     Vector N2 = (triangle2.row(1) - triangle2.row(0)).cross(triangle2.row(2) - triangle2.row(0)).normalized();
@@ -264,6 +260,8 @@ int main()
         {
             triangle3.row(i) = triangle1.row(i) + C * N2.transpose();
         }
+        std::cout << "They are intersecting!\n";
+        std::cout << "Constraint value C: " << C << " and its gradient: [" << N2.row(0) << ", " << N2.row(1) << ", " << N2.row(2) << "]" << std::endl;
     }
     if (d_tri2 > 1.0e-7 && d_tri2 < d_tri1)
     {
@@ -272,9 +270,11 @@ int main()
         {
             triangle3.row(i) = triangle2.row(i) + C * N1.transpose();
         }
+        std::cout << "They are intersecting!\n";
+        std::cout << "Constraint value C: " << C << " and its gradient: [" << N1.row(0) << ", " << N1.row(1) << ", " << N1.row(2) << "]" << std::endl;
     }
 
-    std::cout << "They are intersecting!\n";
+    
 
     // render
 }
