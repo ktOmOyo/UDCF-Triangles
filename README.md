@@ -1,4 +1,5 @@
 # UDCF-Triangles
+[[Project Page](https://ktomoyo.github.io/projectpages/eg2025.html)]
 
 Collision Handling Code for the Eurographics 2025 Paper: A Unified Discrete Collision Framework for Triangle Primitives.
 This code is designed for integration into a Position-Based Dynamics (PBD) framework.
@@ -23,11 +24,17 @@ This algorithm has the following library:
 
 ### Compile and Run
 
-To compile and execute the code, use the following commands:
-
+To compile and execute the C++ code, use the following commands:
 ```sh
+cd src_cpp
 g++ main.cpp
 ./a.out
+```
+
+To compile and execute the Python code, use the following commands:
+```sh
+cd src_python
+python main.py
 ```
 
 ## How to Use
