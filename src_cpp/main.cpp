@@ -3,8 +3,8 @@
  *
  * Released under the MIT License.
  * https://opensource.org/licenses/MIT
- * 
- * Date: 2025-02-18
+ *
+ * Date: February 18, 2025
  */
 
 #include <iostream>
