@@ -11,6 +11,7 @@
 #define __UDCF_ALGORITHM_H__
 
 #include <iostream>
+#include <vector>
 #include <Eigen/Dense>
 
 typedef double Type;
