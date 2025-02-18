@@ -4,10 +4,7 @@
 #include <glm/glm.hpp>
 #include <GL/glut.h>
 
-
-#include "type.h"
 #include "udcf_algorithm.h"
-
 
 int main()
 {
