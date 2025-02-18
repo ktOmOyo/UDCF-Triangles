@@ -1,3 +1,11 @@
+#
+# Copyright Tomoyo Kikuchi and Takashi Kanai
+#
+# Released under the MIT License.
+# https://opensource.org/licenses/MIT
+# 
+# Date: 2025-02-18
+#
 
 import numpy as np
 

@@ -1,8 +1,14 @@
+/*!
+ * Copyright Tomoyo Kikuchi and Takashi Kanai
+ *
+ * Released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ * 
+ * Date: 2025-02-18
+ */
+
 #include <iostream>
 #include <Eigen/Dense>
-#include <vector>
-#include <glm/glm.hpp>
-#include <GL/glut.h>
 
 #include "udcf_algorithm.h"
 

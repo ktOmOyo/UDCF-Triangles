@@ -1,8 +1,16 @@
+/*!
+ * Copyright Tomoyo Kikuchi and Takashi Kanai
+ *
+ * Released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ *
+ * Date: 2025-02-18
+ */
+
 #ifndef __UDCF_ALGORITHM_H__
 #define __UDCF_ALGORITHM_H__
 
 #include <iostream>
-#include <vector>
 #include <Eigen/Dense>
 
 typedef double Type;
