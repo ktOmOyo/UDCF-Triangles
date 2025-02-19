@@ -33,7 +33,7 @@ void swap(Type &d0, Type &d1, Type &d2,
     }
 }
 
-void swap_minmax(Type &t1, Type &t2, Type &d0, Type d2, Vector &v0, Vector &v2)
+void swap_minmax(Type &t1, Type &t2, Type &d0, Type &d2, Vector &v0, Vector &v2)
 { // a consistent order of the bounds of each interval
     if (t1 < t2)
         return;

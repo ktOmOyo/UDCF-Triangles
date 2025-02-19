@@ -189,10 +189,11 @@ for v in intersections2:
     if (d_tri2 < -candidate):
         d_tri2 = -candidate
 
-if (d_tri1 > 1.0e-7 and d_tri1 < d_tri2):
+# The gradient of the constraint is calculated with a positive sign for the triangle that is being corrected.
+if (d_tri1 > 1.0e-7 and d_tri1 < d_tri2): # only triangle 1 is corrected
     C = d_tri1
     dC = N2
-if (d_tri2 > 1.0e-7 and d_tri2 < d_tri1):
+if (d_tri2 > 1.0e-7 and d_tri2 < d_tri1): # only triangle 2 is corrected
     C = d_tri2
     dC = N1
 
